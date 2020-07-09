@@ -1,4 +1,5 @@
 package com.main.src.interfaces;
 
-public interface Head {
+public interface Head  {
+    void thinkSmth();
 }
