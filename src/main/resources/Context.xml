@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<beans
-        xmlns="http://www.springframework.org/schema/beans"
-
+<beans xmlns="http://www.springframework.org/schema/beans"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        https://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-lazy-init="true"
+>
 
+    <bean id="T1000" class="com.main.src.robots.MT1000">
+        <constructor-arg ref="thead"/>
+        <constructor-arg ref="ahand"/>
+        <constructor-arg ref="tfoot"/>
+    </bean>
+
+    <bean id="thead" class="com.main.src.toshiba.ToshibaHead">
+    </bean>
+    <bean id="thand" class="com.main.src.toshiba.ToshibaHand">
+    </bean>
+    <bean id="tfoot" class="com.main.src.toshiba.ToshibaFoot">
+    </bean>
+
+    <bean id="ahead" class="com.main.src.acer.AcerHead">
+    </bean>
+    <bean id="ahand" class="com.main.src.acer.AcerHand">
+    </bean>
+    <bean id="afoot" class="com.main.src.acer.AcerFoot">
+    </bean>
 </beans>
