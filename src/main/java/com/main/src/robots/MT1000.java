@@ -3,9 +3,10 @@ package com.main.src.robots;
 import com.main.src.interfaces.Foot;
 import com.main.src.interfaces.Hand;
 import com.main.src.interfaces.Head;
+import com.main.src.interfaces.Robot;
 
 
-public class MT1000  {
+public class MT1000 implements Robot {
     private Head head;
     private Hand hand;
     private Foot foot;
