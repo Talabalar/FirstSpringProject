@@ -12,6 +12,19 @@
         <constructor-arg ref="tfoot"/>
     </bean>
 
+    <bean id="t1000pool" class="com.main.src.robots.T1000Pool">
+        <property name="robotCollection">
+            <list>
+                <ref bean="t1000"/>
+                <bean id="t10001" class="com.main.src.robots.MT1000">
+                    <constructor-arg ref="ahead"/>
+                    <constructor-arg ref="thand"/>
+                    <constructor-arg ref="afoot"/>
+                </bean>
+            </list>
+        </property>
+    </bean>
+
     <bean id="thead" class="com.main.src.toshiba.ToshibaHead">
     </bean>
     <bean id="thand" class="com.main.src.toshiba.ToshibaHand">
